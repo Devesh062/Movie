@@ -99,6 +99,14 @@ public class New {
                 Choice(c);
             if (flag == 1)
                 System.out.println("is the movie blockbuster? : " + tf);
+            System.out.println("Do you want to continue? Y/N");
+            String req = sc.nextLine();
+            if (req.equals("Y")) {
+                System.out.println("What type of Movie do you want to watch?");
+                System.out.println(" TollyWood \n BollyWood \n HollyWood \n All");
+                c = sc.nextLine();
+            } else
+                c = "EXIT";
         }
         sc.close();
     }
